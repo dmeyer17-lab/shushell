@@ -1,8 +1,10 @@
-#define MAXBUF 256  // max number of characteres allowed on command line
+#define MAXBUF 256
+#define MAX_PROC 1024
 
-// TODO: Any global variables go below
-int thisIsGlobal = 10;  // delete before submission
+//Any global variables go below
 
-// TODO: Function declarations go below
-void example(int*); // delete before submission
+//Function declarations go below
+void trim(char *input);
+void parse(char *input, char **args);
+char *path_resolve(const char *command);
 
